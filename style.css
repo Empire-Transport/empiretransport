@@ -248,3 +248,9 @@ header{
     left: 17px;
     color: #fff;
 }
+@media only screen and (max-width: 620px) {
+    /* For mobile phones: */
+    .message-box, .wrapper {
+      width: 100%;
+    }
+  }
