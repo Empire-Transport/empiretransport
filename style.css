@@ -32,7 +32,6 @@ body{
     font-size: 25px;
     font-weight: 500;
     font-family: 'Montserrat Black';
-
 }
 .nav-menu ul{
     display: flex;
@@ -48,9 +47,6 @@ body{
     margin: 0 25px;
 }
 .link:hover, .active{
-    border-bottom: 2px solid #fff;
-}
-.link::selection{
     border-bottom: 2px solid #fff;
 }
 .nav-button .btn{
