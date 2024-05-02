@@ -171,6 +171,7 @@ body{
 .btn:hover{
     background: rgba(255,255,255,0.8); 
     color: black;
+    font-weight: 700;
 }
 .btn::selection{
     background: rgba(255,255,255,0.15);
@@ -240,7 +241,7 @@ section p{
 .three-col{
     display: flex;
     gap: 10px;
-    font-size: 40px; 
+    font-size: 35px; 
     justify-content: space-around;
     text-decoration: none;
 }
