@@ -357,7 +357,7 @@ header{
     left: 17px;
     color: #fff;
 }
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 680px) {
     /* For mobile phones: */
     .message-box, .wrapper {
       width: 100%;
@@ -367,4 +367,5 @@ header{
       padding-right: 35px;
       height: max-content;
     }
+
   }
