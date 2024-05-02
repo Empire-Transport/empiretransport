@@ -370,5 +370,7 @@ header{
       padding-right: 35px;
       height: max-content;
     }
-
+    .message-box iframe{
+      width: auto;
+    }
   }
