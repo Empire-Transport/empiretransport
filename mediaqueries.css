@@ -1,0 +1,12 @@
+@media screen and (max-width:1200px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    .section__text2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
