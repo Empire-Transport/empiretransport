@@ -1,82 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Empire Transport | Contact Us</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                   <p>EMPIRE.</p> 
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <ul>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Empire Transport | Contact Us</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>
+            <div>
+                <ul class="nav-links">
                     <li><a href="index.html" class="link active">Home</a></li>
+                    <li><a href="about.html" class="link active">About Us</a></li>
                     <li><a href="contact-us.html" class="link active">Contact Us</a></li>
                 </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="scholartrans()">2024 Scholar Transport Brochure</button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div> 
+            <div class="nav-brochure">
+                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="scholartrans()">2024 Brochure</button>
+            </div>
         </nav>
-    </div>
-<!-------------------------------Form Box ---------------------------------->
-<div class="form-box">
-    <!------------------Scholar Transport Quote---------------------->
-    <div class="scholartrans" id="scholartrans">
-        <div class="top">
-            <span>Fill in your details below and we will be in touch ASAP!</span>
-            <header>CONTACT FORM</header>
-        </div>
-        <div class="two-forms">
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Your Full Name">
-                <i class="bx bx-user"></i>
+        <nav id="hamburger-nav">
+            <div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()" >Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()" >About Us</a></li>
+                    <li><a href="contact-us.html" onclick="toggleMenu()">Contact Us</a></li>    
+                </div>
             </div>
-            <div class="input-box">
-                <input type="text" class="input-field" placeholder="Your Surname">
-                <i class="bx bx-user"></i>
-            </div>  
-        </div>
-        <div class="input-box">
-            <input type="text" class="input-field" placeholder="Location">
-            <i class="bx bx-map"></i>
-        </div>
-      <!--div class="input-box">
-            <input type="text" class="input-field" placeholder="Learner's School Name">
-            <i class="bx bx-book"></i> 
-        </div>-->
-        <div class="input-box">
-            <input type="submit" class="submit" value="Get Quoted!"></input> 
-        </div>
-        <div class="two-col">
-            <div class="one">
-                <input type="checkbox" id="ExtraMurals">
-                <label for="ClientStatus">New Client</label>
+        </nav>
+        <script src="script.js"></script>
+        <!-------------------------------Form Box ---------------------------------->
+        <div class="form-box">
+            <!------------------Scholar Transport Quote---------------------->
+            <div class="scholartrans" id="scholartrans">
+                <div class="top">
+                    <span>Fill in your details below and we will be in touch ASAP!</span>
+                    <header>CONTACT FORM</header>
+                </div>
+                <div class="two-forms">
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Your Full Name">
+                        <i class="bx bx-user"></i>
+                    </div>
+                    <div class="input-box">
+                        <input type="text" class="input-field" placeholder="Your Surname">
+                        <i class="bx bx-user"></i>
+                    </div>  
+                </div>
+                <div class="input-box">
+                    <input type="text" class="input-field" placeholder="Location">
+                    <i class="bx bx-map"></i>
+                </div>
+            <!--div class="input-box">
+                    <input type="text" class="input-field" placeholder="Learner's School Name">
+                    <i class="bx bx-book"></i> 
+                </div>-->
+                <div class="input-box">
+                    <input type="submit" class="submit" value="Get Quoted!"></input> 
+                </div>
+                <div class="two-col">
+                    <div class="one">
+                        <input type="checkbox" id="ExtraMurals">
+                        <label for="ClientStatus">New Client</label>
+                    </div>
+                    <div class="two">
+                        <label><a href="https://shorturl.at/akstR">2024 Brochure</a></label>
+                    </div>
+                </div>
             </div>
-            <div class="two">
-                <label><a href="https://shorturl.at/akstR">2024 Brochure</a></label>
-            </div>
         </div>
-    </div>
-</div>
-
-</body>
-<script>
-    const myButton = document.getElementById('scholarquoteBtn');
-    
-    myButton.addEventListener('click', function() {
-      window.location.href = 'https://shorturl.at/akstR'; // Replace with your desired URL
-    });
-    
-    </script>
+    </body>
+        <script>
+            const myButton = document.getElementById('scholarquoteBtn');
+            
+            myButton.addEventListener('click', function() {
+            window.location.href = 'https://shorturl.at/akstR'; // Replace with your desired URL
+            });
+            
+            </script>
 </html>

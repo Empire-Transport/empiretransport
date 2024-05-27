@@ -1,84 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <meta http-equiv="x-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-    <title>Empire Transport | Coming Soon</title>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
-    <div class="wrapper">
-        <nav class="nav">
-            <div class="nav-logo">
-                   <p>EMPIRE.</p> 
-            </div>
-            <div class="nav-menu" id="navMenu">
-                <ul>
-                   <!-----<li><a href="index.html" class="link active">Home</a></li>-->
-                   <!---- <li><a href="contact-us.html" class="link active">Contact Us</a></li>-->
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Empire Transport | Home</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>
+            <!--<img src="Assets/IMG-20211002-WA0000-removebg-preview.png" alt="Empire Transport Logo" class="logo" onclick href="index.html">-->
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="link active">Home</a></li>
+                    <li><a href="about.html" class="link active">About Us</a></li>
+                 <!---<li><a href="contact-us.html" class="link active">Contact Us</a></li>-->
                 </ul>
-            </div>
-            <div class="nav-button">
-                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="scholartrans()">2024 Brochure</button>
-            </div>
-            <div class="nav-menu-btn">
-                <i class="bx bx-menu" onclick="myMenuFunction()"></i>
             </div> 
+            <div class="nav-brochure">
+                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="window.open('https://shorturl.at/akstR')">2024 Brochure</button>
+            </div>
         </nav>
-    </div>
-    <!--<section-->
-   <!----div class="container"-->
-      <!--div class="text"-->
-        <!--h1Page Not Found-h1-->
-        <!--p>We can't seem to find the page you're looking for. Please check the URL for any typos.</!--p>
-      <!-div-->
-    <!--div-->
-    <!--section-->
-    <div class="message-box">
-        <div class="messagetouser" id="pager404">
-            <h2>WEBSITE UNDER DEVELOPMENT</h2>
-            <p>OOPS! Looks like you've taken a wrong turn on the road to your destination! Don't worry, we won't leave you stranded.</p>
-            <br>
-            <p>Our team is currently developing a new website. In the meantime, click one of the below methods of contacting us for private hire quotations.</p>
-            <br>
-            <span>Looking for Scholar Transportation? <a href="https://shorturl.at/akstR" onclick="privatetrans()">Click Here</a></span>
-        </div>
-        <div class="comms-icons" id="comms">
-            <div class="three-col">
-                <div class="phone-btn">
-                    <a href=tel:27814594716><i class='bx bxs-phone' style='color:#ffffff'></i></a>
+        <nav id="hamburger-nav">
+            <div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
                 </div>
-                <div class="email-btn">
-                    <a href=mailto:sales@simsempiretransport.co.za><i class='bx bxs-envelope' style='color:#ffffff'></i></a>
-                </div>
-                <div class="whatsapp-btn">
-                    <a href="https://wa.me/27671496889"><i class='bx bxl-whatsapp' style='color:#ffffff'></i></i></a>                    
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="toggleMenu()" >Home</a></li>
+                    <li><a href="about.html" onclick="toggleMenu()" >About Us</a></li>
+                   <!---<li><a href="contact-us.html" onclick="toggleMenu()">Contact Us</a></li>-->    
                 </div>
             </div>
-        </div>  
-        <br>
-        <div class="googleprof" id="profile">
-            <div class="googlebiz">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2680401798884!2d30.956257275051918!3d-25.42930083286328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8314b64b49459%3A0xa3a705923cdad52!2sSims%20Empire%20Transport%20(PTY)%20Ltd!5e0!3m2!1sen!2sza!4v1714610309117!5m2!1sen!2sza" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </nav>
+        <section id="landing">
+           <!----<div class="section__pic-container">
+                <img src="Assets/3668b71ae13142df972ee5c5e640f8b3.jpg" alt="SM Shuttle GL"/>
+            </div>-->
+            <div class="section__text">
+                <p class="section__text__p1">Your Trusted Transport Service Provider</p>
+                <h1 class="title">Empire Transport</h1>
+                <br>
+                <p>OOPS! Looks like you've taken a wrong turn on the road to your destination! Don't worry, we won't leave you stranded.</p>
+                <p>Our team is still developing our new website. In the meantime, click one of the below methods of contacting us for private hire quotations.</p>
+                <br>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('https://shorturl.at/akstR')">Scholar Transport Brochure</button>
+                    <button class="btn btn-color-1" onclick="window.open('/Assets/Service Provider.pdf')">Private Hire Brochure</button>
+                </div>
             </div>
-        </div>        
-    </div>
-</body>
-
-<script>
-const myButton = document.getElementById('scholarquoteBtn');
-
-myButton.addEventListener('click', function() {
-  window.location.href = 'https://shorturl.at/akstR'; // Replace with your desired URL
-});
-
-</script>
-
+            <div id="socials-container">
+                <img src="/Assets/email.png" alt="Empire Transport Email" class="icon" onclick="location.href='mail:sales@simsempiretransport.co.za'"/>
+                <img src="/Assets/01-06-9.png" alt="Empire Transport WhatsApp" class="icon" onclick="location.href='https://wa.me/27814594716'" />
+                <img src="/Assets/4f13404aa04805594ae255d9e73df9c8.png" alt="Empire Transport Call" class="icon" onclick="location.href='tel:27814594716'" />
+            </div>
+        </section> 
+        <script src="script.js"></script>
+    </body>
 </html>
