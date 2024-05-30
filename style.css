@@ -147,7 +147,7 @@ a:hover {
 section{
   padding-top: 4vh;
   height: 96vh;
-  margin: 0 10rem;
+  margin: 0 2.5rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -179,6 +179,7 @@ section{
 .section__text2{
   align-self: center;
   text-align: center;
+  font-weight:600;
 }
 
 .section__text p{
@@ -203,6 +204,7 @@ section{
   margin-top: 1rem;
   gap: 1rem;
 }
+
 
 /* ICONS */
 

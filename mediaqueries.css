@@ -8,4 +8,37 @@
     *{
         font-family: 'montserrat';
     }
+    .section__text{
+        width:fit-content;
+        justify-items: center;
+        text-align: center;
+        margin-left: 0rem;
+    }
+    .profile{
+        margin: 0 2rem;
+    }
+
 }
+
+@media screen and (max-width:600px){
+    #desktop-nav{
+        display: none;
+    }
+    #hamburger-nav{
+        display: flex;
+    }
+    *{
+        font-family: 'montserrat';
+    }
+    .section__text{
+        width:fit-content;
+        justify-items: center;
+        text-align: center;
+        margin-left: 0rem;
+    }
+    .profile{
+        margin: 0 2rem;
+    }
+}
+
+
