@@ -51,6 +51,7 @@ a:hover {
   color: red;
   text-decoration: underline;
   text-underline-offset: 1rem;
+  font-weight: 700;
 }
 .logo {
   font-size: 1.5rem;
@@ -75,6 +76,7 @@ a:hover {
   color: white;
   background-color: red;
   border-color: red;
+  font-weight: 800;
 }
 
 /* HAMBURGER MENU*/
@@ -223,6 +225,7 @@ section{
   gap: 1rem;
 }
 .btn{
+  font-family: 'Montserrat';
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
@@ -264,4 +267,10 @@ section{
   display: flex;
   text-align: center;
   flex-direction: column;
+}
+.trusted-logo{
+  align-content: center;
+  align-self: center;
+  justify-content: center;
+  display: flex;
 }
