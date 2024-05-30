@@ -57,9 +57,13 @@ a:hover {
   font-weight: 600;
   color: red;
   list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  width: 100px;
+  height: 80px;
 }
 .logo:hover {
-  cursor: default;
+  cursor: pointer;
 }
 .scholar-btn {
   cursor: pointer;
