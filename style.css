@@ -1,7 +1,8 @@
 /* Everything Else */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
 
 *{
     margin: 0;
@@ -10,7 +11,7 @@
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -178,10 +179,6 @@ section{
 .section__text2{
   align-self: center;
   text-align: center;
-  padding-top: 4vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
 }
 
 .section__text p{
