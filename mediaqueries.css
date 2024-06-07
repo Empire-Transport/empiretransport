@@ -14,9 +14,11 @@
         text-align: center;
         margin-left: 0rem;
     }
-    .profile{
-        margin: 0 2rem;
-    }
+    
+    .googlebiz iframe{
+        width: auto;
+        height: 200px;
+      }
 
 }
 
@@ -36,9 +38,11 @@
         text-align: center;
         margin-left: 0rem;
     }
-    .profile{
-        margin: 0 2rem;
-    }
+    
+    .googlebiz iframe{
+        width: auto;
+        height: 200px;
+      }
 }
 
 
