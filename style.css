@@ -158,6 +158,14 @@ section{
   min-height: fit-content;
 }
 
+#about{
+  padding-top: 2vh;
+  height: 70vh;
+  margin: 0 2.5rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
 .section-container{
   display: flex;
 }
@@ -239,7 +247,7 @@ section{
   cursor: pointer;
 }
 .btn-color-1, .btn-color-2:hover{
-  background: red;
+  background: rgb(255, 0, 0);
   color:white;
 }
 .btn-color-1:hover{
@@ -273,4 +281,9 @@ section{
   align-self: center;
   justify-content: center;
   display: flex;
+}
+
+.googlebiz iframe{
+  width: 400px;
+  height: 200px;
 }
