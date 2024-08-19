@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>You're Offline | Empire Transport</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+    </head>
+    <body>
+        <div tabindex="-1" style="margin:0; position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); outline:none; text-align:center;">
+            <div style="display:block; align-self: center; margin-left:auto; margin-right:auto; width:200px; height:200px;">
+                <img src="/Assets/IMG-20211002-WA0000.jpg" id="no-connection" width="250px" height="200px" alt="No connection found.">
+            </div>
+            <div style="padding-top:20px;" dir="auto">
+                <span class="maintextFont">You appear to be offline</span>
+            </div>
+            <div style="padding-top:8px;" dir="auto">
+                <span class="subtextFont">You can't use our website until you're connected to the Internet</span>
+            </div>
+            <div style="padding-top:20px; display:flex; justify-content:center;" dir="auto">
+                <button class="btn retry-btn" id="retryBtn" tabindex="0">
+                    <span>Retry</span>
+                </button>
+            </div>
+        </div>
+        <script>
+            document.getElementById("retryBtn").addEventListener('click', (e) =>  window.location.reload());
+            const productLogoImg = document.getElementById("product-logo");
+            const noConnectionImg = document.getElementById("no-connection");
+            productLogoImg.addEventListener('error', (e) => {productLogoImg.parentElement.style.display='none';});
+            noConnectionImg.addEventListener('error', (e) => {noConnectionImg.parentElement.style.display='none';});
+            window.addEventListener('online', (e) => window.location.reload());
+        </script>
+    </body>
+</html>
