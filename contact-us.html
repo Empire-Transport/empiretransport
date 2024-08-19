@@ -1,28 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="google-site-verification" content="fly_FDy8whr6mpJyq_aU4tN0vdSEy3U-BsAQyH--kDc" />
         <meta charset="UTF-8" />
         <meta http-equiv="x-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <title>Empire Transport | Contact Us</title>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="contactpagestyle.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
         <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
-        <!--<script> var url = 'https://widget.bot.space/js/widget.js'; var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url; var options = {"enabled":true,"chatButtonSetting":{"backgroundColor":"#B50010","ctaText":"Message Us","borderRadius":"25","marginLeft":"20","marginBottom":"20","marginRight":"20","position":"right"},"brandSetting":{"brandName":"Empire Transport","brandSubTitle":"Typically replies within an hour","brandImg":"https://simsempiretransport.com/Assets/IMG-20211002-WA0000.jpg","welcomeText":"Hi there! \nHow can we help you?","messageText":"","backgroundColor":"#B50010","ctaText":"Start Chat With Us","borderRadius":"25","autoShow":false,"phoneNumber":"27814594716"}}; s.onload = function() { CreateWhatsappChatWidget(options); }; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);</script>
-        <!--Start of Tawk.to Script-->
+        <!--Tawk.to Live Chat Widget Script-->
         <script type="text/javascript">
             var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-            (function(){
-                var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-                s1.async=true;
-                s1.src='https://embed.tawk.to/66698f979a809f19fb3cc438/1i065hq4m';
-                s1.charset='UTF-8';
-                s1.setAttribute('crossorigin','*');
-                s0.parentNode.insertBefore(s1,s0);
-                })();
+                (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/66698f979a809f19fb3cc438/1i065hq4m';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                    })();
         </script>
-    <!--End of Tawk.to Script-->
+        <script src="https://kit.fontawesome.com/90caadb011.js"></script> <!--Footer Icons-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Form Animation-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script> <!--Email Plugin-->
+        <script src="script.js"></script>
     </head>
     <body>
         <nav id="desktop-nav">
@@ -32,11 +35,13 @@
                 <ul class="nav-links">
                     <li><a href="index.html" class="link active">Home</a></li>
                     <li><a href="about.html" class="link active">About Us</a></li>
+                    <!--<li><a href="services.html" class="link active">Our Services</a></li>
+                    <li><a href="offline.html" class="link active">Offline Page</a></li>-->
                     <li><a href="contact-us.html" class="link active">Contact Us</a></li>
                 </ul>
             </div> 
             <div class="nav-brochure">
-                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="scholartrans()">2024 Brochure</button>
+                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="window.open('https://shorturl.at/sRc0u')"><i class="fa-solid fa-file-pdf"></i>Brochures</button>
             </div>
         </nav>
         <nav id="hamburger-nav">
@@ -51,58 +56,80 @@
                 <div class="menu-links">
                     <li><a href="index.html" onclick="toggleMenu()" >Home</a></li>
                     <li><a href="about.html" onclick="toggleMenu()" >About Us</a></li>
-                    <li><a href="contact-us.html" onclick="toggleMenu()">Contact Us</a></li>    
+                    <!--<li><a href="services.html" onclick="toggleMenu()" >Our Services</a></li>-->
+                    <li><a href="contact-us.html" onclick="toggleMenu()">Contact Us</a></li>  
                 </div>
             </div>
         </nav>
-        <script src="script.js"></script>
-        <!-------------------------------Form Box ---------------------------------->
-        <div class="form-box">
-            <!------------------Scholar Transport Quote---------------------->
-            <div class="scholartrans" id="scholartrans">
-                <div class="top">
-                    <span>Fill in your details below and we will be in touch ASAP!</span>
-                    <header>CONTACT FORM</header>
-                </div>
-                <div class="two-forms">
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Your Full Name">
-                        <i class="bx bx-user"></i>
+        <section id="contactuspage">
+            <form action="#" id="contactus">
+                <div class="form-box-cont">
+                    <div class="contactusbox" id="conusbox">
+                        <div class="top">
+                            <span>Seat your details below and we will be in touch ASAP!</span>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="text" required spellcheck="false" class="item" id="firstname">
+                                <label>First Name</label>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="text"required spellcheck="false" class="item" id="surname">
+                                <label>Surname</label>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="email" required class="item" id="email">
+                                <label>Email Address</label>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="tel" required class="item" id="phone">
+                                <label>Cell Phone Number</label>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                        </div>
+                        <div id="container">
+                            <input type="button" button class="btn scholar-btn" value="Send Email" onclick="sendEmail()"/>
+                        </div>                
                     </div>
-                    <div class="input-box">
-                        <input type="text" class="input-field" placeholder="Your Surname">
-                        <i class="bx bx-user"></i>
-                    </div>  
                 </div>
-                <div class="input-box">
-                    <input type="text" class="input-field" placeholder="Location">
-                    <i class="bx bx-map"></i>
+            </form>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="/Assets/TRUSTED STICKER.png" alt="Trusted Sticker"  class="trusted-logo" onclick="location.href='index.html'" style="height: 90px; width: 90px">
+                    <p class="col-text-footer">Your Trusted Scholar Transport & Private Hire Provider in the Lowveld!</p>
                 </div>
-            <!--div class="input-box">
-                    <input type="text" class="input-field" placeholder="Learner's School Name">
-                    <i class="bx bx-book"></i> 
-                </div>-->
-                <div class="input-box">
-                    <input type="submit" class="submit" value="Get Quoted!"></input> 
+                <div class="col">
+                    <h3>Our Location<div class="underline"><span></span></div></h3>
+                    <p class="col-text-footer">6 Buffalo Street</p>
+                    <p class="col-text-footer">Ext 18, White River</p>
+                    <p class="col-text-footer">Mpumalanga, 1240, South Africa</p>
+                    <p class="email-id" onclick="location.href='mailto:sales@simsempiretransport.co.za'">sales@simsempiretransport.co.za</p>
+                    <h4 onclick="location.href='tel:27814594716'">+27 81 459 4716</h4>
                 </div>
-                <div class="two-col">
-                    <div class="one">
-                        <input type="checkbox" id="ExtraMurals">
-                        <label for="ClientStatus">New Client</label>
-                    </div>
-                    <div class="two">
-                        <label><a href="https://shorturl.at/akstR">2024 Brochure</a></label>
+                <div class="col">
+                    <h3>Links<div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <!--<li><a href="services.html">Our Services</a></li>-->
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Our Socials<div class="underline"><span></span></div></h3>
+                    <div class="social-icons-ftr">
+                        <i class="fab fa-whatsapp" onclick="location.href='https://wa.me/27814594716'"></i>
+                        <i class="fab fa-instagram" onclick="location.href='https://shorturl.at/Fpb6c'"></i>
                     </div>
                 </div>
             </div>
-        </div>
+            <hr>
+            <p class="copyright">Empire Transport © 2024 - All Rights Reserved</p>
+        </footer>
     </body>
-        <script>
-            const myButton = document.getElementById('scholarquoteBtn');
-            
-            myButton.addEventListener('click', function() {
-            window.location.href = 'https://shorturl.at/akstR'; // Replace with your desired URL
-            });
-            
-            </script>
 </html>

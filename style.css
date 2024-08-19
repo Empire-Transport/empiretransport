@@ -8,6 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,166 @@ html {
 p {
   color: rgb(85, 85, 85);
 }
+
+::-webkit-scrollbar{
+  width: 7px;
+}
+::-webkit-scrollbar-thumb{
+  background-color: red;
+}
+::-webkit-scrollbar-track{
+  background: white;
+}
+
+/* Footer */
+footer{
+  width: 99.99%;
+  position: absolute;
+  background: #000;
+  color: #fff;
+  padding: 50px 0 30px;
+  border-top-left-radius: 125px;
+  border-top-right-radius: 30px;
+  font-size: 13px;
+  line-height: 20px;
+  margin-top: 7rem;
+}
+.col-text-footer{
+  color: white;
+}
+.row{
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.col{
+  flex-basis: 25%;
+  padding: 10px;
+}
+.col:nth-child(2),.col:nth-child(3){
+  flex-basis: 15%;
+}
+.trusted-logo{
+  margin-bottom: 5px;
+}
+.col h3{
+  width: fit-content;
+  margin-bottom: 25px;
+  position: relative;
+}
+.email-id{
+  width: fit-content;
+  border-bottom: 1px solid white;
+  margin: 7px 0;
+  cursor: pointer;
+  margin-bottom: 10px;
+  color: white;
+}
+.email-id:hover {
+  color: red;
+  border-bottom: 1px solid red;
+}
+.col h4:hover{
+  color: red;
+  text-decoration: underline;
+  text-underline-offset: 0.5rem;
+  cursor: pointer;
+}
+
+footer ul li{
+  list-style: none;
+  margin-bottom: 13px;
+}
+footer ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+form{
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+form .far{
+  font-size: 18px;
+  margin-right: 12px;
+}
+form input{
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+form button{
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+form button .fas{
+  font-size: 16px;
+  color: #ccc;
+}
+.social-icons-ftr .fab{
+  padding-top: 5px;
+  width: 30px;
+  height: 30px;
+  /*border-radius: 50%;*/
+  text-align: center;
+  line-height: 30px;
+  font-size: 25px;
+  color: white;
+  /*background:white;*/
+  margin-right: 3px;
+  cursor: pointer;
+}
+.underline{
+  width: 100%;
+  height: 3px;
+  background: #767676;
+  border-radius: 3px;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  overflow: hidden;
+}
+.underline span{
+  width: 15px;
+  height: 100%;
+  background: red;
+  border-radius: 3px;
+  position: absolute;
+  top:0;
+  left: 10px;
+  animation: moving 2s linear infinite;
+}
+
+@keyframes moving{
+  0%{
+    left: -20px;
+  }
+  100%{
+    left: 100%;
+  }
+}
+hr{
+  width: 85%;
+  border: 0;
+  border-bottom: 1px solid #8b1a1a;
+  margin: 10px auto;
+}
+.copyright{
+  text-align: center;
+  color: white
+}
+
 
 /* Transitions */
 
@@ -50,7 +211,7 @@ a {
 a:hover {
   color: red;
   text-decoration: underline;
-  text-underline-offset: 1rem;
+  text-underline-offset: 0.5rem;
   font-weight: 700;
 }
 .logo {
@@ -152,8 +313,7 @@ a:hover {
 
 section{
   padding-top: 4vh;
-  height: 70vh;
-  margin: 0 2.5rem;
+  height: 100%;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -161,13 +321,16 @@ section{
 #about{
   padding-top: 2vh;
   height: 70vh;
-  margin: 0 2.5rem;
   box-sizing: border-box;
   min-height: fit-content;
+  margin: 0 2.5rem;
 }
 
 .section-container{
   display: flex;
+}
+#landing{
+  margin: 0 2.5rem;
 }
 
 /* PROFILE SECTION */
@@ -177,7 +340,9 @@ section{
   justify-content: center;
   gap: 5rem;
   height: fit-content;
+  margin: 0 2.5rem;
 }
+
 .section__pic-container{
   display: flex;
   width: 400px;
@@ -217,6 +382,10 @@ section{
   margin-top: 1rem;
   gap: 1rem;
 }
+.quantum img{
+  width: 8rem;
+  cursor:pointer;
+}
 
 
 /* ICONS */
@@ -237,7 +406,7 @@ section{
   font-weight: 600;
   transition: all 300ms ease;
   padding: 1rem;
-  width: 8rem;
+  width: 9rem;
   border-radius: 2rem;
 }
 .btn-color-1, .btn-color-2{
@@ -269,9 +438,10 @@ section{
 
 .form-box{
   align-content: center;
-  padding-top: 20vh;
+  padding-top: 10vh;
   align-self: center;
   justify-content: space-between;
+  align-items: center;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -286,4 +456,65 @@ section{
 .googlebiz iframe{
   width: 400px;
   height: 200px;
+}
+
+.input-field{
+  font-size: 0.95rem;
+  font-family: 'Montserrat Regular';
+  background: rgba(66, 52, 52, 0.2);
+  color: #702323;
+  height: 3rem;
+  width: 80%;
+  padding: 0 10px 0 45px;
+  padding-bottom: 1vh;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  transition: .2s ease;
+  text-justify: auto;
+}
+.input-field:hover, .input-field:focus{
+  background: rgba(255,255,255,0.25);
+}
+::-webkit-input-placeholder{
+  color: #a62525; 
+}
+.input-box i{
+  position: relative;
+  top: -35px;
+  left: 17px;
+  color: #8b1a1a;
+}
+.submit{
+  font-size: 15px;
+  font-family:'Montserrat ExtraBold';
+  font-weight: 500;
+  color: black;
+  height: 40px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  background: rgba(255,255,255,0.7);
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+
+
+/* SERVICE PAGE - MUST CREATE OWN STYLE PAGE */
+.fleet img{
+  width: 30rem;
+  margin-left: 30rem;
+}
+
+/* ABOUT PAGE SECTION */
+#underdev {
+  display: flex;
+  justify-content: center;
+  height: 5rem;
+  background-color: red;
+}
+.under-dev{
+  color: white;
 }

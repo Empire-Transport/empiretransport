@@ -19,7 +19,16 @@
         width: auto;
         height: 200px;
       }
-
+    .footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        padding: 10px;
+      }
+      .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
+      }
 }
 
 @media screen and (max-width:600px){
@@ -38,10 +47,23 @@
         text-align: center;
         margin-left: 0rem;
     }
+    .under-dev{
+        font-size: 1.2rem;
+    }
     
     .googlebiz iframe{
         width: auto;
         height: 200px;
+      }
+    .footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        padding: 10px;
+      }
+      .col:nth-child(2),.col:nth-child(3){
+        flex-basis: 100%;
       }
 }
 
