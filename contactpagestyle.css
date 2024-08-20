@@ -225,6 +225,7 @@ input:hover~label, input:valid~label{
   font-weight: 800;
 }
 
+
 /* Buttons */
 .btn{
     font-family: 'Montserrat';
