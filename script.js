@@ -58,7 +58,7 @@ function sendEmail() {
   let email = document.getElementById("email").value;
   let phone = document.getElementById("phone").value;
   let tMessage = document.getElementById("tMessage").value;
-  let bodyMessage = `First Name : ${firstname} <br> Surname : ${surname} <br> Email : ${email} <br>  Phone Number : ${phone} <br> Message: ${tMessage} <br>`;
+  let bodyMessage = `First Name : ${firstname} <br> Surname : ${surname} <br> Email : ${email} <br>  Phone Number : ${phone} <br> Message : ${tMessage} <br>`;
 
   Email.send({
     SecureToken: "e87b82f0-ad52-47a1-8f18-07f9aded9315",
