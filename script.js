@@ -70,15 +70,35 @@ function sendEmail() {
     message => {
       if(message=='OK'){
         Swal.fire({
-          title: "Success!",
-          text: "Your query has been seated! Our team will be in touch to collect fare asap!",
-          icon: "success"
-        });      
+          title: "Confirm your details for us.",
+          text: `First Name : ${firstname}'         'Surname : ${surname}'         'Email : ${email}'         'Phone Number : ${phone}'         'Message : ${tMessage}`,
+          icon: "question",
+          showCancelButton: true,
+          confirmButtonColor: "#1a9414",
+          cancelButtonColor: "#ff0000",
+          confirmButtonText: "Yes, seat it!"
+        }).then((result) => {
+          if (result.isConfirmed) {
+            Swal.fire({
+              title: "Success!",
+              text: "Your query has been seated! Our team will be in touch to collect fare asap!",
+              icon: "success"
+            });
+          }
+        }); 
       }
 });
 }
 
-/* Connection Tester 
+
+
+/* Swal.fire({
+  title: "Success!",
+  text: "Your query has been seated! Our team will be in touch to collect fare asap!",
+  icon: "success"
+}); 
+
+ Connection Tester 
 var img = new Image();
 var ping = function() { img.src = "https://simsempiretransport.com/Assets/IMG-20211002-WA0000.jpg" }
 ping();
