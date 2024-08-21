@@ -3,13 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-    color: red;
 }
 body {
   font-family: "Montserrat";
   justify-content: center;
   display: flex;
   flex-direction: column;
+  background-color: red;
+  color: white;
 }
 
 html {
@@ -22,12 +23,33 @@ p{
     color: white;
     align-items: center;
 }
+.heading{
+  padding-top:5rem;
+  font-weight: 900;
+}
+.subtext{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
 #brochure{
     align-content: center;
-    padding-top: 20rem;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
     box-sizing: border-box;
-    min-height: fit-content;
-    width: 100%;
+    width: fit-content;
+    /*transform:translate(40%,-40%);
+    top:50%;
+    left:50%;*/
+    text-align:center;
+  }
+  .buttons{
+    align-content: center;
+    text-align: center;
+  }
+ .b1, .b2, .b3{
+    padding-top: 1rem;
+    padding-bottom: 0.1rem;
   }
   .btn{
     font-family: 'Montserrat';
@@ -48,4 +70,12 @@ p{
     background-color: red;
     border-color: red;
     font-weight: 800;
+  }
+  .logo-img{
+    display:block;
+    align-self:center;
+    margin-left:auto;
+    margin-right:auto;
+    width:200px;
+    height:200px;
   }

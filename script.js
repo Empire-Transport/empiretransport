@@ -9,14 +9,6 @@ var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
         s0.parentNode.insertBefore(s1,s0);
         })();
 
-/* Menu on Mobile */
-function toggleMenu(){
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
 /* Email Form */
 const form = document.querySelector("form");
 const firstname = document.getElementById("firstname");

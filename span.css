@@ -1,0 +1,84 @@
+/* Menu On Phone View */
+
+.toggle{
+    position:relative;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+}
+.toggle span{
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: red;
+    border-radius: 4px;
+    transition: 0.5s;
+}
+.toggle span:nth-child(1){
+    transform: translateY(-15px);
+    width: 25px;
+    left: 15px;
+}
+.toggle.active span:nth-child(1){
+    width: 40px;
+    transform: translateY(0px) rotate(45deg);
+    transition-delay: 0.125s;
+}
+.toggle span:nth-child(2){
+    transform: translateY(15px);
+    width: 15px;
+    left: 15px;
+}
+.toggle.active span:nth-child(2){
+    width: 40px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.25s;
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(60px);
+}
+.toggle.active{
+    background: white;
+}
+
+.hamburger-menu {
+    position:relative;
+  }
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 5;
+    background-color: white;
+    width: fit-content;
+    max-height: 0;
+    overflow: hidden;
+    transition-delay: 0.25s;
+    transition: all 0.3 ease-in-out;
+  }
+  .menu-links a{ 
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.1rem;
+    color: white;
+    background-color: red;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+    height: 100%;
+    font-weight: 500;
+    transition-delay: 0.25s;
+
+  }
+  .menu-links li {
+    list-style: none;
+  }
+  .menu-links.open {
+    max-height: 600px;
+  }
+
+
+  
