@@ -43,7 +43,6 @@ p{
     left:50%;*/
     text-align:center;
   }
-
   .buttons{
     align-content: center;
     text-align: center;
@@ -52,11 +51,6 @@ p{
     padding-top: 1rem;
     padding-bottom: 0.1rem;
   }
-
-   /*display:flex;
-  justify-content:space-between;
-  list-style:none;
-  */
   .btn{
     font-family: 'Montserrat';
     font-weight: 600;
