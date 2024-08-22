@@ -1,14 +1,11 @@
 /* Menu On Phone View */
-#hamburger-nav {
+#hamburger-nav{
   display: none;
 }
-
-.hamburger-menu {
+.hamburger-menu{
   position:relative;
   display: inline-block;
 }
-
-
 .toggle{
     position:relative;
     width: 70px;
