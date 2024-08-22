@@ -190,6 +190,15 @@ a, btn{
 }
 
 /* Desktop Nav */
+#hamburger-nav {
+  display: none;
+}
+
+.hamburger-menu {
+  position:relative;
+  display: inline-block;
+}
+
 nav, .nav-links{
   display: flex;
 }
