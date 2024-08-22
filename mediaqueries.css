@@ -5,6 +5,10 @@
     #hamburger-nav{
         display: flex;
     }
+    .hamburger-menu {
+        position:relative;
+        display: inline-block;
+      }
     *{
         font-family: 'montserrat';
     }
@@ -43,6 +47,10 @@
     #hamburger-nav{
         display: flex;
     }
+    .hamburger-menu {
+        position:relative;
+        display: inline-block;
+      }
     *{
         font-family: 'montserrat';
     }
