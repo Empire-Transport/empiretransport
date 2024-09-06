@@ -48,24 +48,31 @@
         </div>
     </nav>
     <nav id="hamburger-nav">
-        <img src="Assets/IMG-20211002-WA0000-removebg-preview.png" alt="Empire Transport Logo" class="logo" onclick="location.href='index.html'">
         <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
+            <div class="toggle" onclick="menuToggle()">
                 <span></span>
                 <span></span>
                 <span></span>
             </div>
             <div class="menu-links">
-                <li><a href="index.html" onclick="toggleMenu()" >Home</a></li>
-                <li><a href="about.html" onclick="toggleMenu()" >About Us</a></li>
-                <li><a href="services.html" onclick="toggleMenu()" >Our Services</a></li>
-                <li><a href="contact-us.html" onclick="toggleMenu()">Contact Us</a></li>    
+                <li><a href="index.html" onclick="menuToggle()" >Home</a></li>
+                <li><a href="about.html" onclick="menuToggle()" >About Us</a></li>
+                <!--<li><a href="services.html" onclick="menuToggle()" >Our Services</a></li>--> 
+                <li><a href="contact-us.html" onclick="menuToggle()">Contact Us</a></li>
             </div>
         </div>
+        <img src="Assets/IMG-20211002-WA0000-removebg-preview.png" alt="Empire Transport Logo" class="logo" onclick="location.href='index.html'">
+        <script src="hamburger.js"></script>
     </nav>
     <div class="fleet">
         <img src="/Assets/Fleet/clpjy9nfe041l1dakbzg5pc93-coaster-accessories-601x460.desktop.png" alt="Toyota Coaster">
     </div>
+    <section id="downloads">
+        <button class="file-btn" id="applicationBtn">
+            <a href='/Assets/SERVICE PROVIDER PROPOSAL.pdf' download="Empire Service Provider"><img src="/Assets/SERVICE PROVIDER PROPOSAL.pdf" alt="Proposal"></href=></a>
+            <i class="fa-solid fa-file-pdf"></i>
+    </button>
+    </section>
     <footer>
         <div class="row">
             <div class="col">
@@ -81,12 +88,13 @@
                 <h4 onclick="location.href='tel:27814594716'">+27 81 459 4716</h4>
             </div>
             <div class="col">
-                <h3>Links<div class="underline"><span></span></div></h3>
+                <h3>Sitemap<div class="underline"><span></span></div></h3>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Our Services</a></li>
                     <li><a href="contact-us.html">Contact Us</a></li>
+                    <li><a href="brochure.html">Brochures</a></li>
                 </ul>
             </div>
             <div class="col">
@@ -105,5 +113,6 @@
         <hr>
         <p class="copyright">Empire Transport © 2024 - All Rights Reserved</p>
     </footer>
+    <script src="hamburger.js"></script>
 </body>
 </html>

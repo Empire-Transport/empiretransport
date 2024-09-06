@@ -5,8 +5,8 @@
     #hamburger-nav{
         display: flex;
     }
-    .hamburger-menu {
-        position:relative;
+    #hamburger-menu{
+        position: relative;
         display: inline-block;
       }
     *{
@@ -33,10 +33,9 @@
       .col:nth-child(2),.col:nth-child(3){
         flex-basis: 100%;
       }
-      #brochure{
-        width: min-content;
-        margin-right: 8.5rem;
-        margin-left: 8.5rem;
+    #brochure{
+        align-self: center;
+        text-align: center;
     }
 }
 
@@ -47,10 +46,10 @@
     #hamburger-nav{
         display: flex;
     }
-    .hamburger-menu {
-        position:relative;
+    #hamburger-menu{
+        position: relative;
         display: inline-block;
-      }
+    }
     *{
         font-family: 'montserrat';
     }
@@ -79,9 +78,8 @@
         flex-basis: 100%;
       }
     #brochure{
-        width:min-content;
-        margin-right: 8.5rem;
-        margin-left: 8.5rem;
+        align-self: center;
+        text-align: center;
     }
 }
 
