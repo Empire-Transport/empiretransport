@@ -235,6 +235,21 @@ input:hover~label, input:valid~label{
     width: 9rem;
     border-radius: 2rem;
   }
+#disclaimer{
+  padding-top: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 9rem;
+  margin-right: 8rem;
+}
+#disclaimer h3{
+  font-weight: 800;
+  font-size: 1rem;
+}
+#disclaimer p{
+  font-weight: 500;
+}
 /* Footer */
 footer{
     width: 99.99%;
