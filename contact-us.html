@@ -31,7 +31,7 @@
     <body>
         <nav id="desktop-nav">
             <!--<div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>-->
-            <img src="Assets/IMG-20211002-WA0000.jpg" alt="Empire Transport Logo" class="logo" onclick="location.href='index.html'">
+            <img src="Assets/IMG-20211002-WA0000.jpg" alt="Empire Transport Logo" id="logo" class="logo" onclick="location.href='index.html'" onMouseOver="playAnimation()" onmouseout="showStatic()">
             <div>
                 <ul class="nav-links">
                     <li><a href="index.html" class="link active">Home</a></li>
@@ -42,7 +42,7 @@
                 </ul>
             </div> 
             <div class="nav-brochure">
-                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="location.href='brochure.html'"><i class="fa-solid fa-file-pdf"></i>Brochures</button>
+                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="location.href='brochure.html'"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Brochures</button>
             </div>
         </nav>
         <nav id="hamburger-nav">
@@ -61,7 +61,32 @@
             </div>
             <img src="Assets/IMG-20211002-WA0000-removebg-preview.png" alt="Empire Transport Logo" class="logo" onclick="location.href='index.html'">
         </nav>
-        <section id="contactuspage">
+        <section id="contactus">
+            <h1 class="contactus-header"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;CONTACT US</h1>
+        </section>
+        <section id="contactus-direct">
+            <div class="row">
+                <div class="col border-right">
+                    <p>Thank you for considering our services. For us to fully service your needs, please select an option from the buttons for us to be able to assist you.</p>
+                    <br>
+                    <div class="googleprof" id="profile">
+                        <div class="googlebiz">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2680401798884!2d30.956257275051918!3d-25.42930083286328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8314b64b49459%3A0xa3a705923cdad52!2sSims%20Empire%20Transport%20(PTY)%20Ltd!5e0!3m2!1sen!2sza!4v1714610309117!5m2!1sen!2sza" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>  
+                    <br>
+                </div>
+                <div class="col">
+                    <div id="contactus-buttons">
+                        <button class="btn scholar-btn" id="scholarBtn" onclick="location.href='https://forms.gle/V3iUKNnWRZ5XQjXH6'" target="_self"><i class="fa-solid fa-bus"></i>&nbsp;&nbsp;&nbsp;2025 Schoolar Transport Sign-Up</button>
+                        <button class="btn scholar-btn" id="privateBtn" onclick="location.href='https://forms.gle/vEbVpVxj6kEPHtSM8'" target="_self"><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;Private Hire Booking Request</button>
+                        <button class="btn scholar-btn" id="customerBtn" onclick="location.href='https://forms.gle/VEjPeaiy4dyMGXSX9'" target="_self"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Customer Service Feedback</button>
+                        <button class="btn scholar-btn" id="contactBtn" onclick="location.href='https://forms.gle/HH2eThBsZ8vd8JLG7'" ><i class="fa-solid fa-info"></i>&nbsp;&nbsp;&nbsp;General Contact Request</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="contactuspage">
             <form action="#" id="contactus">
                 <div class="form-box-cont">
                     <div class="contactusbox" id="conusbox">
@@ -90,9 +115,11 @@
                                 <i class="fa-solid fa-phone"></i>
                             </div>
                             <div class="input-field field">
-                                <input type="text" required spellcheck="false" class="item" id="tMessage">
-                                <label>Your Message</label>
-                                <i class="fa-solid fa-cloud"></i>
+                                <div class="tMessage-in">
+                                    <input type="text" required spellcheck="false" class="item" id="tMessage">
+                                    <label>Your Message</label>
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
                             </div>
                         </div>
                         <div id="container">
@@ -101,6 +128,10 @@
                     </div>
                 </div>
             </form>
+        </section>-->
+        <section id="disclaimer">
+            <h3 class="btn2header">DISCLAIMER:</h3>
+            <p class="btn2">Official means of contact from our team are made ONLY from +27 81 459 4716, sales@simsempiretransport.co.za or accounts@simsempiretransport.co.za</p>
         </section>
         <footer>
             <div class="row">
