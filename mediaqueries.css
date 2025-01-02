@@ -8,6 +8,7 @@
     #hamburger-menu{
         position: relative;
         display: inline-block;
+        color: white;
       }
     *{
         font-family: 'montserrat';
@@ -85,6 +86,37 @@
         margin-left: 2rem;
         margin-right: 2rem;
       }
+    #contactus-direct .row{
+        flex-basis: 100%;
+        align-self: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    #contactus-direct .col{
+        align-items: center;
+        padding: 1.5rem;
+        flex-basis: 100%;
+        justify-content: center;
+    }
+    #contactus-direct .border-right{
+        border-right: 0rem solid black;
+        height: 0rem;
+      }
+
+      #contactus-direct button{
+        width: 18rem;
+        display:inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        padding-block: 1rem;
+        margin-left: 1rem;
+      }
+      .googlebiz iframe{
+        width: 345px;
+        height: 200px;
+      }
+      
 }
 
 
