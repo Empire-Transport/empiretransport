@@ -107,3 +107,16 @@ img.onload = function(e) {
   console.log('YES');
   clearTimeout;
 }*/
+
+/* FIREWORKS */
+
+
+function playAnimation()
+{
+    document.getElementById('logo').src = "Assets/534320_791f5.gif";
+
+}
+function showStatic()
+{
+    document.getElementById('logo').src = "Assets/IMG-20211002-WA0000.jpg" ;
+}
