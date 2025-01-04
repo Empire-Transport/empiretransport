@@ -44,11 +44,11 @@ p{
   #brochure{
     padding-top: 2vh;
     height: 45vh;
-    box-sizing: border-box;
+    width: 90%;
     min-height: fit-content;
-    margin: 0 2.5rem;
+    margin: 0 2.0rem;
     align-self: center;
-    text-align: center;
+    text-align: justify;
   }
   
   .section-container{
@@ -69,50 +69,69 @@ p{
 
   /* FILES */
 .DocumentsDown{
+  /*justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  display: flex;*/
+  flex-wrap: wrap;
+  align-items: flex-start;
   justify-content: space-between;
   display: flex;
   flex-direction: column;
 }
+#brochure .col{
+  flex-basis: 50%;
+  padding: 10px;
+}
 .doc1{
   margin-top: 1rem;
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 .doc1:hover{
+  text-decoration-color: red;
+}
+.doc1 .fa-download:hover{
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: red;
-  font-weight: 500;
 }
 .doc2{
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 .doc2:hover{
+  text-decoration-color: red;
+}
+.doc2 .fa-download:hover{
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: red;
-  font-weight: 500;
 }
 .doc3{
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 .doc3:hover{
+  text-decoration-color: red;
+}
+.doc3 .fa-download:hover{
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: red;
-  font-weight: 500;
 }
 .doc4{
   margin-bottom: 1rem;
-  cursor: pointer;
 }
 .doc4:hover{
+  text-decoration-color: red;
+}
+.doc4 .fa-download:hover{
+  cursor: pointer;
   text-decoration: underline;
   text-underline-offset: 0.5rem;
   text-decoration-color: red;
-  font-weight: 500;
 }
 
 ::-webkit-scrollbar{
