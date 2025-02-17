@@ -240,8 +240,8 @@ a:hover {
   width: 100px;
   height: 80px;
 }
-.logo-fireworks{
-  vertical-align: top;
+.logo:hover{
+  cursor: pointer;
 }
 
 .scholar-btn {
@@ -278,6 +278,7 @@ section{
   display: flex;
 }
 #landing{
+  padding-top: 3rem;
   margin: 0 2.5rem;
 }
 
