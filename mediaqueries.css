@@ -91,6 +91,7 @@
         align-self: flex-start;
         flex-direction: column;
         justify-content: flex-start;
+        width: 100%;
     }
     #contactus-direct .col{
         align-items: center;
