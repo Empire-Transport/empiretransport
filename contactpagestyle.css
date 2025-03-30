@@ -482,7 +482,7 @@ button:hover .button-text {
 
 }
 #contactus-direct .row{
-  width: 90%;
+  width: 95%;
 }
 
 #contactus-direct .border-right{
@@ -514,6 +514,6 @@ button:hover .button-text {
 
 .googlebiz iframe{
   padding-top: 1rem;
-  width: 600px;
+  width: 400px;
   height: 200px;
 }
