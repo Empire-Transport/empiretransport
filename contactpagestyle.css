@@ -98,7 +98,6 @@ nav, .nav-links{
   
   .hamburger-menu {
     position:relative;
-    display: inline-block;
   }
   
   .hamburger-icon {
@@ -118,7 +117,7 @@ nav, .nav-links{
   .menu-links {
     position: absolute;
     top: 100%;
-    right: 0;
+    right: 5;
     background-color: white;
     width: fit-content;
     max-height: 0;
@@ -130,15 +129,18 @@ nav, .nav-links{
     padding: 20px;
     text-align: center;
     font-size: 1.1rem;
-    color: black;
+    color: white;
+    background-color: red;
     text-decoration: none;
-    transition: all 0.3 ease-in-out;
+    transition: all 0.1 ease-in-out;
+    height: 100%;
+    font-weight: 500;
   }
   .menu-links li {
     list-style: none;
   }
   .menu-links.open {
-    max-height: 300px;
+    max-height: 600px;
   }
   .hamburger-icon.open span:first-child {
     transform: rotate(45deg) translate(10px, 5px);
