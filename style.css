@@ -19,7 +19,7 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
+*p {
   color: rgb(85, 85, 85);
 }
 
@@ -187,6 +187,23 @@ hr{
   display: flex;
   width: 100%;
   margin: auto 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+#landingimg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% transparency */
+  z-index: -1; /* Ensure the overlay is behind the content */
 }
 
 

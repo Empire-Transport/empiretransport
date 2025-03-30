@@ -5,6 +5,7 @@
 .hamburger-menu{
   position:relative;
   display: inline-block;
+  transition: all 150ms ease-in-out;
 }
 .toggle{
     position:relative;
@@ -15,7 +16,7 @@
     align-items: center;
     cursor: pointer;
     overflow: hidden;
-    background: white;
+    background: transparent;
 }
 .toggle span{
     position: absolute;
@@ -49,7 +50,7 @@
     transform: translateX(60px);
 }
 .toggle.active{
-    background: white;
+    background: transparent;
 }
 
 .hamburger-menu {
@@ -63,7 +64,7 @@
     width: fit-content;
     max-height: 0;
     overflow: hidden;
-    transition: all ease-in-out;
+    transition: max height 150ms all ease-in-out;
   }
   .menu-links a{ 
     display: block;
