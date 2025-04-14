@@ -120,3 +120,28 @@ function showStatic()
 {
     document.getElementById('logo').src = "Assets/IMG-20211002-WA0000.jpg" ;
 }
+
+
+// DOWNLOAD PAGE //
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const downloadBoxes = document.querySelectorAll('.download-box');
+
+  downloadBoxes.forEach(box => {
+      const iconClass = box.dataset.icon;
+      const downloadUrl = box.dataset.url;
+
+      const downloadLink = document.createElement('a');
+      downloadLink.href = downloadUrl;
+      downloadLink.classList.add('download-link');
+      downloadLink.setAttribute('download', ''); // Instructs the browser to download
+
+      const iconElement = document.createElement('i');
+      iconElement.classList.add('fas', iconClass, 'download-icon');
+
+      downloadLink.appendChild(iconElement);
+      box.appendChild(downloadLink);
+  });
+});

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="google-site-verification" content="fly_FDy8whr6mpJyq_aU4tN0vdSEy3U-BsAQyH--kDc" />
+        <meta charset="UTF-8" />
+        <meta http-equiv="x-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <title>Empire Transport | Contact Us</title>
+        <link rel="stylesheet" href="span.css" />
+        <link rel="stylesheet" href="contactpagestyle.css" />
+        <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
+        <!--Tawk.to Live Chat Widget Script-->
+        <script type="text/javascript">
+            var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+                (function(){
+                    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+                    s1.async=true;
+                    s1.src='https://embed.tawk.to/66698f979a809f19fb3cc438/1i065hq4m';
+                    s1.charset='UTF-8';
+                    s1.setAttribute('crossorigin','*');
+                    s0.parentNode.insertBefore(s1,s0);
+                    })();
+        </script>
+        <script src="https://kit.fontawesome.com/90caadb011.js"></script> <!--Footer Icons-->
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> <!--Form Animation-->
+        <script src="https://smtpjs.com/v3/smtp.js"></script> <!--Email Plugin-->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <nav id="desktop-nav">
+            <!--<div class="logo"><li><a href="index.html" class="link active">EMPIRE.</a></li></div>-->
+            <img src="Assets/IMG-20211002-WA0000.jpg" alt="Empire Transport Logo" id="logo" class="logo" onclick="location.href='index.html'">
+            <div>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="link active">Home</a></li>
+                    <li><a href="about.html" class="link active">About Us</a></li>
+                    <!--<li><a href="services.html" class="link active">Our Services</a></li>
+                    <li><a href="offline.html" class="link active">Offline Page</a></li>-->
+                    <li><a href="contact-us.html" class="link active">Contact Us</a></li>
+                </ul>
+            </div> 
+            <div class="nav-brochure">
+                <button class="btn scholar-btn" id="scholarquoteBtn" onclick="location.href='brochure.html'"><i class="fa-solid fa-file-pdf"></i>&nbsp;&nbsp;Brochures</button>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="hamburger-menu">
+                <div class="toggle" onclick="menuToggle()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="index.html" onclick="menuToggle()" >Home</a></li>
+                    <li><a href="about.html" onclick="menuToggle()" >About Us</a></li>
+                    <li><a href="brochure.html" onclick="menuToggle()" >Brochures</a></li>
+                    <!--<li><a href="services.html" onclick="menuToggle()" >Our Services</a></li>--> 
+                    <li><a href="contact-us.html" onclick="menuToggle()">Contact Us</a></li>
+                </div>
+            </div>
+            <img src="Assets/IMG-20211002-WA0000-removebg-preview.png" alt="Empire Transport Logo" class="logo" onclick="location.href='index.html'">
+        </nav>
+        <section id="contactus">
+            <h1 class="contactus-header"><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;&nbsp;CONTACT US</h1>
+        </section>
+        <section id="contactus-direct">
+            <div class="row">
+                <div class="col border-right">
+                    <p>Thank you for considering our services. For us to fully service your needs, please select an option from the buttons for us to be able to assist you.</p>
+                    <br>
+                    <div class="googleprof" id="profile">
+                        <div class="googlebiz">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2680401798884!2d30.956257275051918!3d-25.42930083286328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8314b64b49459%3A0xa3a705923cdad52!2sSims%20Empire%20Transport%20(PTY)%20Ltd!5e0!3m2!1sen!2sza!4v1714610309117!5m2!1sen!2sza" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>  
+                    <br>
+                </div>
+                <div class="col">
+                    <div id="contactus-buttons">
+                        <button class="btn scholar-btn" id="scholarBtn" onclick="location.href='https://forms.gle/V3iUKNnWRZ5XQjXH6'" target="_self"><i class="fa-solid fa-bus"></i>&nbsp;&nbsp;&nbsp;Scholar Transport Sign-Up</button>
+                        <button class="btn scholar-btn" id="privateBtn" onclick="location.href='https://forms.gle/vEbVpVxj6kEPHtSM8'" target="_self"><i class="fa-solid fa-calendar"></i>&nbsp;&nbsp;&nbsp;Private Hire Booking Request</button>
+                        <button class="btn scholar-btn" id="customerBtn" onclick="location.href='https://forms.gle/VEjPeaiy4dyMGXSX9'" target="_self"><i class="fa-solid fa-user"></i>&nbsp;&nbsp;&nbsp;Customer Service Feedback</button>
+                        <button class="btn scholar-btn" id="contactBtn" onclick="location.href='https://forms.gle/HH2eThBsZ8vd8JLG7'" ><i class="fa-solid fa-info"></i>&nbsp;&nbsp;&nbsp;General Contact Request</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--<section id="contactuspage">
+            <form action="#" id="contactus">
+                <div class="form-box-cont">
+                    <div class="contactusbox" id="conusbox">
+                        <div class="top">
+                            <span>Seat your details below and we will be in touch ASAP!</span>
+                        </div>
+                        <div class="input-box">
+                            <div class="input-field field">
+                                <input type="text" required spellcheck="false" class="item" id="firstname">
+                                <label>First Name</label>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="text"required spellcheck="false" class="item" id="surname">
+                                <label>Surname</label>
+                                <i class="fa-solid fa-user"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="email" required class="item" id="email">
+                                <label>Email Address</label>
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="input-field field">
+                                <input type="tel" required class="item" id="phone">
+                                <label>Cell Phone Number</label>
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="input-field field">
+                                <div class="tMessage-in">
+                                    <input type="text" required spellcheck="false" class="item" id="tMessage">
+                                    <label>Your Message</label>
+                                    <i class="fa-solid fa-cloud"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="container">
+                            <input type="button" button class="btn scholar-btn" value="Send Email" onclick="sendEmail()"/>
+                        </div>                
+                    </div>
+                </div>
+            </form>
+        </section>-->
+        <section id="disclaimer">
+            <h3 class="btn2header">DISCLAIMER:</h3>
+            <p class="btn2">Official means of contact from our team are made ONLY from <a href="tel:+27814594716">+27 81 459 4716</a>, <a href="mailto:sales@simsempiretransport.co.za">sales@simsempiretransport.co.za</a> or <a href="mailto:accounts@simsempiretransport.co.za">accounts@simsempiretransport.co.za</a></p>
+        </section>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <img src="/Assets/TRUSTED STICKER.png" alt="Trusted Sticker"  class="trusted-logo" onclick="location.href='index.html'" style="height: 90px; width: 90px">
+                    <p class="col-text-footer">Your Trusted Scholar Transport & Private Hire Provider in the Lowveld!</p>
+                </div>
+                <div class="col">
+                    <h3>Our Location<div class="underline"><span></span></div></h3>
+                    <p class="col-text-footer">6 Buffalo Street</p>
+                    <p class="col-text-footer">Ext 18, White River</p>
+                    <p class="col-text-footer">Mpumalanga, 1240, South Africa</p>
+                    <p class="email-id" onclick="location.href='mailto:sales@simsempiretransport.co.za'">sales@simsempiretransport.co.za</p>
+                    <h4 onclick="location.href='tel:27814594716'">+27 81 459 4716</h4>
+                </div>
+                <div class="col">
+                    <h3>Sitemap<div class="underline"><span></span></div></h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index-test.html">Home - WIP</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="about-test.html">About Us - WIP</a></li>
+                        <li><a href="services.html">Our Services - NS</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="contact-us-test.html">Contact Us - WIP</a></li>
+                        <li><a href="brochure.html">Brochures</a></li>
+                        <li><a href="brochure-test.html">Brochures - WIP</a></li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <h3>Our Socials<div class="underline"><span></span></div></h3>
+                    <div class="social-icons-ftr">
+                        <i class="fab fa-whatsapp" onclick="location.href='https://wa.me/27814594716'"></i>
+                        <i class="fab fa-instagram" onclick="location.href='https://shorturl.at/Fpb6c'"></i>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Empire Transport © 2025 - All Rights Reserved</p>
+        </footer>
+        <script src="hamburger.js"></script>
+    </body>
+</html>
