@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Space between the rectangles */
+}
+
+.download-box {
+    width: 80px;
+    height: 150px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 15px; /* Rounded corners */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Size of the initial content (can be adjusted) */
+    cursor: pointer; /* Initial cursor for the box */
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+    position: relative; /* For positioning the icon */
+}
+
+.download-box:hover {
+    background-color: #2980b9;
+}
+
+.download-link {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none; /* Remove default link underline */
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Cursor for the icon/link */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease;
+}
+
+.download-box:hover .download-link {
+    opacity: 1; /* Show the icon on hover */
+}
+
+.download-icon {
+    font-size: 40px; /* Size of the download icon */
+}

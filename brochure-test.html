@@ -6,10 +6,14 @@
         <meta http-equiv="x-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-        <title>Empire Transport | About Us</title>
+        <title>Empire Transport | Downloads</title>
         <link rel="stylesheet" href="span.css" />
+        <link rel="stylesheet" href="brochure.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="mediaqueries.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap" rel="stylesheet">
         <link rel="icon" href="Assets/favicon.ico" type="image/x-icon">
         <Tawk.to Live Chat Widget Script-->
         <script type="text/javascript">
@@ -63,30 +67,60 @@
         <section id="underdev">
             <h1 class="under-dev"><i class="fa-solid fa-screwdriver-wrench"></i>UNDER DEVELOPMENT</h1>
         </section>
-        <section id="about">
-            <div class="trusted-logo">
-                <img src="/Assets/TRUSTED STICKER.png" alt="Empire Trusted" style="height: 90px; width: 90px"/>
-            </div>
-            <br>
-            <div class="section__text2">
-                <p>Sims Empire Transport is a reputable company that has been serving the Lowveld Region and surrounding communities for eight (8) years. We take pride in offering reliable, safe, and comfortable shuttle services to individuals, groups, and businesses.</p>
+        <section id="brochure">
+                <!--<div id="logo-img">
+                    <img src="/Assets/IMG-20211002-WA0000.jpg" id="no-connection" width="200px" height="150px">
+                </div>-->
+                <div class="heading">
+                    <span class="maintextFont">DOWNLOADS</span>
+                </div>
                 <br>
-                <p>Want to get more insight on our services? Click on the QUANTUM below to leave your details with us and we will contact you</p>
-                <br>
-                <div class="quantum">
-                    <img src="/Assets/Fleet/10392_1_toyota_quantum_hiace_side_shotpng_1_918x516.webp" alt="Toyota Quantum GL" onclick="location.href='contact-us.html'">
+                <div class="DocumentsDown">
+                    <div class="row">
+                        <div class="col">
+                            <div class="doc1">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid  fa-download" onclick="window.open('https://drive.google.com/file/d/1UrDddLKlxeiEkGkGQugDLjv40HEhNfbh/view?usp=sharing')"></i>
+                                <span class="DocsDown">&nbsp;&nbsp;&nbsp;2024/2025 Scholar Transportation Application Form</span>
+                            </div>
+                            <div class="doc2">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid  fa-download" onclick="window.open('https://drive.google.com/file/d/1rWvMFGD_gOL5tQxOYj0FsRdUqYqk5FQk/view?usp=sharing')"></i>
+                                <span class="DocsDown" >&nbsp;&nbsp;&nbsp;Scholar Transport Brochure</span>
+                            </div>
+                            <div class="doc3">
+                                <i class="fa-solid fa-image"></i>
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid  fa-download" onclick="window.open('https://drive.google.com/file/d/1ixGPDIkPEgNpbqtEMsYaMqX0CAiGG4nW/view?usp=sharing')"></i>
+                                <span class="DocsDown">&nbsp;&nbsp;&nbsp;2024/2025 Curro Academy Mbombela Flyer</span>
+                            </div>
+                            <div class="doc4">
+                                <i class="fa-solid fa-file-pdf"></i>
+                                &nbsp;&nbsp;&nbsp;
+                                <i class="fa-solid fa-download" onclick="window.open('https://drive.google.com/file/d/1kmXSQp53hDg7uI7MBkv1X1gFd9yo49Fy/view?usp=sharing')"></i>
+                                <span class="DocsDown">&nbsp;&nbsp;&nbsp;Private Hire Brochure</span>
+                            </div>
+                        </div>
+                        <!--<div class="col">
+                            <div id="newsletter-img">
+                                <img src="/Assets/Management30_WebsiteIllustration_Newsletter-01.webp" id="newsletter" width="200px" height="200px">
+                            </div>
+                        </div>-->
+                    </div>
                 </div>
             </div>
             <br>
-            <br>
-            <div class="googleprof" id="profile">
-                <div class="googlebiz">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3603.2680401798884!2d30.956257275051918!3d-25.42930083286328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1ee8314b64b49459%3A0xa3a705923cdad52!2sSims%20Empire%20Transport%20(PTY)%20Ltd!5e0!3m2!1sen!2sza!4v1714610309117!5m2!1sen!2sza" style="border:2px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>  
         </section>
         <br>
         <br>
+        <div class="container">
+            <div class="download-box" data-icon="fa-file-pdf" data-url="path/to/your/document1.pdf"></div>
+            <div class="download-box" data-icon="fa-file-pdf" data-url="path/to/your/document2.pdf"></div>
+            <div class="download-box" data-icon="fa-file-pdf" data-url="path/to/your/document3.pdf"></div>
+            <div class="download-box" data-icon="fa-file-pdf" data-url="path/to/your/document4.pdf"></div>
+        </div>
         <footer>
             <div class="row">
                 <div class="col">
@@ -105,11 +139,14 @@
                     <h3>Sitemap<div class="underline"><span></span></div></h3>
                     <ul>
                         <li><a href="index.html">Home</a></li>
+                        <li><a href="index-test.html">Home - WIP</a></li>
                         <li><a href="about.html">About Us</a></li>
-                        <!--<li><a href="about-test.html">Internal</a></li>
-                        <li><a href="services.html">Our Services</a></li>-->
+                        <li><a href="about-test.html">About Us - WIP</a></li>
+                        <li><a href="services.html">Our Services - NS</a></li>
                         <li><a href="contact-us.html">Contact Us</a></li>
+                        <li><a href="contact-us-test.html">Contact Us - WIP</a></li>
                         <li><a href="brochure.html">Brochures</a></li>
+                        <li><a href="brochure-test.html">Brochures - WIP</a></li>
                     </ul>
                 </div>
                 <div class="col">
