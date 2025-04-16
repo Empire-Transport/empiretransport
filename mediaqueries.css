@@ -38,6 +38,13 @@
       width: 95%;
       margin: 0 1rem;
     }
+    body{
+      background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+
+    }
 }
 
 @media screen and (max-width:600px){
@@ -118,7 +125,101 @@
         width: 345px;
         height: 200px;
       }
+    body{
+      background-size: cover; /* Ensures the image covers the entire area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed during scrolling */
+
+    }
       
+}
+@media screen and (max-width:300px){
+  #desktop-nav{
+      display: none;
+  }
+  #hamburger-nav{
+      display: flex;
+  }
+  #hamburger-menu{
+      position: relative;
+      display: inline-block;
+  }
+  *{
+      font-family: 'montserrat';
+  }
+  .section__text{
+      width:fit-content;
+      justify-items: center;
+      text-align: center;
+      margin-left: 0rem;
+  }
+  .under-dev{
+      font-size: 1.2rem;
+  }
+  
+  .googlebiz iframe{
+      width: auto;
+      height: 200px;
+    }
+  .footer{
+      bottom: unset;
+  }
+  .col{
+      flex-basis: 100%;
+      padding: 10px;
+    }
+    .col:nth-child(2),.col:nth-child(3){
+      flex-basis: 100%;
+    }
+  #brochure{
+    width: 100%;
+    margin: 0;
+    padding: 1rem;
+  }
+  #disclaimer{
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+  #contactus-direct .row{
+      flex-basis: 100%;
+      align-self: flex-start;
+      flex-direction: column;
+      justify-content: flex-start;
+      width: 100%;
+  }
+  #contactus-direct .col{
+      align-items: center;
+      padding: 1.5rem;
+      flex-basis: 100%;
+      justify-content: center;
+  }
+  #contactus-direct .border-right{
+      border-right: 0rem solid black;
+      height: 0rem;
+    }
+
+    #contactus-direct button{
+      width: 18rem;
+      display:inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      padding-block: 1rem;
+      margin-left: 1rem;
+    }
+    .googlebiz iframe{
+      width: 345px;
+      height: 200px;
+    }
+  body{
+    background-size: cover; /* Ensures the image covers the entire area */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-attachment: fixed; /* Keeps the image fixed during scrolling */
+
+  }
+    
 }
 
 
