@@ -497,6 +497,23 @@ flex-direction: row;
   color: white;
 }
 
+#about-us {
+    padding: 2rem; /* Adds padding around the section */
+    text-align: justify; /* Ensures text is justified */
+}
+
+#about-us h2 {
+    font-size: 2rem; /* Default font size for larger screens */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+#about-us p {
+    font-size: 1rem; /* Default font size for paragraphs */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+}
+
 /* Video */
 
 
