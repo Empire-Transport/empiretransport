@@ -13,41 +13,79 @@ body {
     gap: 20px; /* Space between the rectangles */
 }
 
-.download-box {
-    width: 80px;
-    height: 150px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 15px; /* Rounded corners */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 24px; /* Size of the initial content (can be adjusted) */
-    cursor: pointer; /* Initial cursor for the box */
-    transition: background-color 0.3s ease; /* Smooth transition for hover */
-    position: relative; /* For positioning the icon */
+/* Wrapper for the tiles */
+.tile-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid layout */
+    gap: 2rem; /* Space between tiles */
+    padding: 2rem; /* Padding around the wrapper */
+    justify-items: center; /* Centers the tiles horizontally */
 }
 
-.download-box:hover {
-    background-color: #2980b9;
+/* Individual tile */
+.tile {
+    position: relative;
+    width: 100%; /* Ensures the tile takes up the full grid cell */
+    max-width: 300px; /* Optional: Limits the maximum width of each tile */
+    height: 400px; /* Fixed height for tiles */
+    overflow: hidden; /* Ensures content doesn't overflow the tile */
+    border-radius: 10px; /* Rounds the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Adds hover effects */
+    background-color: #f9f9f9; /* Light background color */
 }
 
-.download-link {
+/* Tile hover effect */
+.tile:hover {
+    transform: translateY(-10px); /* Moves the tile up slightly on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Increases shadow on hover */
+}
+
+/* Tile image */
+.tile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the tile without distortion */
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-decoration: none; /* Remove default link underline */
-    color: inherit; /* Inherit text color from parent */
-    cursor: pointer; /* Cursor for the icon/link */
-    opacity: 0; /* Initially hidden */
-    transition: opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.download-box:hover .download-link {
-    opacity: 1; /* Show the icon on hover */
+/* Overlay for the tile */
+.tile-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 2;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Fade-in effect on hover */
 }
 
-.download-icon {
-    font-size: 40px; /* Size of the download icon */
+/* Show overlay on hover */
+.tile:hover .tile-overlay {
+    opacity: 1; /* Makes the overlay visible on hover */
+}
+
+/* Content inside the tile */
+.tile-content {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 3;
+    color: #fff; /* White text color */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Adds text shadow for better readability */
+}
+
+.tile-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.tile-content p {
+    font-size: 1rem;
+    line-height: 1.5;
 }
