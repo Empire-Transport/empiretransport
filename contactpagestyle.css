@@ -238,7 +238,6 @@ input:hover~label, input:valid~label{
     border-radius: 2rem;
   }
 #disclaimer{
-  padding-top: 4rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -518,4 +517,40 @@ button:hover .button-text {
   padding-top: 1rem;
   width: 400px;
   height: 200px;
+}
+
+/* DISCLAIMER */
+/* Style for the disclaimer box */
+.disclaimer-box {
+    background-color: red; /* Red background */
+    border-radius: 40px; /* Rounded edges */
+    padding: 1rem; /* Add padding inside the box */
+    margin: 2rem auto; /* Center the box and add spacing */
+    max-width: 100%; /* Limit the width of the box */
+    text-align: center; /* Center-align the content */
+    margin-top: 2rem; /* Add top margin */
+}
+
+/* Style for the header */
+.disclaimer-box .btn2header {
+    color: white; /* White text */
+    font-size: 1.5rem; /* Adjust font size */
+    margin-bottom: 1rem; /* Add spacing below the header */
+}
+
+/* Style for the paragraph */
+.disclaimer-box .btn2 {
+    color: white; /* White text */
+    padding-left: 1rem; /* Add left padding */
+    padding-right: 1rem; /* Add right padding */
+    font-size: 1rem; /* Adjust font size */
+    text-align:center; /* Justify the paragraph */
+    line-height: 1.6; /* Improve readability */
+}
+
+/* Style for links inside the paragraph */
+.disclaimer-box .btn2 a {
+    color: white; /* White text for links */
+    text-decoration: underline; /* Underline links */
+    font-weight: bold; /* Make links bold */
 }
