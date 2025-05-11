@@ -145,3 +145,15 @@ document.addEventListener('DOMContentLoaded', function() {
       box.appendChild(downloadLink);
   });
 });
+
+
+// ABOUT US HEADING ANIMATION //
+    document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typewriter", {
+            strings: ["Driving Excellence in Transportation for Over 9 Years."], // Text to type
+            typeSpeed: 50, // Speed of typing
+            backSpeed: 30, // Speed of deleting
+            loop: true, // Enable looping
+            cursorChar: "|", // Customize the cursor
+        });
+    });
