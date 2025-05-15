@@ -145,3 +145,46 @@ document.addEventListener('DOMContentLoaded', function() {
       box.appendChild(downloadLink);
   });
 });
+
+
+// ABOUT US HEADING ANIMATION //
+    document.addEventListener("DOMContentLoaded", function () {
+        new Typed("#typewriter", {
+            strings: ["Driving Excellence in Transportation for Over 9 Years."], // Text to type
+            typeSpeed: 50, // Speed of typing
+            backSpeed: 30, // Speed of deleting
+            loop: true, // Enable looping
+            cursorChar: "|", // Customize the cursor
+        });
+    });
+
+// DISABLE RIGHT CLICK //
+
+/*    // Disable right-click
+    document.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+
+    // Disable specific keyboard shortcuts
+    document.addEventListener('keydown', function (e) {
+        // Disable F12
+        if (e.key === 'F12') {
+            e.preventDefault();
+        }
+        // Disable Ctrl+Shift+I
+        if (e.ctrlKey && e.shiftKey && e.key === 'I') {
+            e.preventDefault();
+        }
+        // Disable Ctrl+U (View Source)
+        if (e.ctrlKey && e.key === 'u') {
+            e.preventDefault();
+        }
+    }); */
+
+    (function () {
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'F12' || (e.ctrlKey && e.shiftKey && e.key === 'I')) {
+            debugger;
+        }
+    });
+})();

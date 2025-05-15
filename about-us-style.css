@@ -274,6 +274,17 @@ a:hover {
   font-weight: 800;
 }
 
+/* ABOUT US HEADING */
+#typewriter {
+    font-size: 1.2rem;
+    color: #333; /* Adjust color as needed */
+}
+
+.typed-cursor {
+    font-weight: bold;
+    color: #333; /* Adjust cursor color */
+}
+
 /* SECTION */
 
 section{
@@ -486,4 +497,80 @@ flex-direction: row;
   color: white;
 }
 
+#about-us {
+    padding: 2rem; /* Adds padding around the section */
+    text-align: justify; /* Ensures text is justified */
+}
+
+#about-us h2 {
+    font-size: 2rem; /* Default font size for larger screens */
+    text-align: center; /* Centers the heading */
+    margin-bottom: 1rem; /* Adds space below the heading */
+}
+
+#about-us p {
+    font-size: 1rem; /* Default font size for paragraphs */
+    line-height: 1.6; /* Improves readability */
+    margin-bottom: 1rem; /* Adds space between paragraphs */
+}
+
 /* Video */
+
+
+/* Clients */
+.our_clients-heading {
+    color: grey; /* Sets the text color to grey */
+}
+
+/* ---- NOT IN USE ------
+ Marquee Container 
+.rfm-marquee-container {
+    overflow: visible; -- Allows the marquee to overflow --
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+/* Marquee Animation *
+.rfm-marquee {
+    display: flex;
+    position: absolute;
+    animation: marquee 100s linear infinite; -- Adjust duration as needed --
+    width: 100%; -- Ensure enough space for looping --
+}
+
+/* Keyframes for Marquee Animation *
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%); -- Moves the content left --
+    }
+}
+.rfm-marquee-container:hover .rfm-marquee {
+    animation-play-state: paused; -- Pauses the animation on hover --
+} */
+
+/* General Spacing for the Section */
+.our_clients {
+    margin: 2rem 0; /* Adds space above and below the section */
+    text-align: center; /* Centers the content */
+}
+
+.our_clients-heading {
+    margin-bottom: 1.5rem; /* Adds space below the heading */
+    font-size: 1.8rem; /* Adjust font size for better readability */
+    color: grey; /* Optional: Make the text grey */
+}
+
+/* Spacing for Client Logos */
+.client-logos {
+    display: flex;
+    justify-content: center; /* Centers the logos */
+    gap: 1.5rem; /* Adds space between logos */
+}
+
+.client-logos img {
+    margin: 0.5rem; /* Adds space around each logo */
+}
