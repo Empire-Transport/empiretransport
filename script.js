@@ -160,7 +160,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // DISABLE RIGHT CLICK //
 
-/*    // Disable right-click
+    // Disable right-click
     document.addEventListener('contextmenu', function (e) {
         e.preventDefault();
     });
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (e.ctrlKey && e.key === 'u') {
             e.preventDefault();
         }
-    }); */
+    });
 
     (function () {
     document.addEventListener('keydown', function (e) {
